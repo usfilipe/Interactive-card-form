@@ -1,0 +1,210 @@
+:root{
+    /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --background-color-1: hsl(249, 99%, 64%);
+  --background-color-2: hsl(278, 94%, 30%);
+
+  --red-form:hsl(0, 100%, 66%);
+
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html * {
+  font-family: 'Space Grotesk', sans-serif;
+
+}
+
+   /*========== CARDS ==========*/
+
+.cards{
+  background-image: url(./images/bg-main-mobile.png);
+  background-size: cover;
+  height: 15rem;
+  
+}
+.card__holder{
+  margin: auto;
+  width: 23.4375rem;
+  height: 15rem;
+  filter:drop-shadow(0px 39px 60px rgba(0,0,0,0.142481))
+}
+
+.c-back{
+  margin-left: 4.5625rem;
+  margin-top: 2rem;
+}
+
+.c-front{
+  margin-left: 1rem;
+  transform: translateY(-4.5rem);
+}
+
+.c-front, .c-back{
+  width: 17.875rem;
+  height: 9.8125rem;
+}
+
+.circles-logo{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  left: 2.1875rem;
+  top: 8.7rem;
+
+}
+
+.circle-full {
+  
+  background: var(--white);
+  border-radius: 50%;
+  width: 1.875rem;
+  height: 1.875rem;
+  
+}
+
+.circle-border {
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  width: 0.84rem;
+  height: 0.84rem;
+  
+}
+
+
+.c-number-d{
+  color: var(--white);
+  position: absolute;
+  left: 2.1875rem;
+  font-size: 1.125rem;
+  letter-spacing: .1375rem;
+}
+
+ /*========== FORM ==========*/
+
+ .flex{
+  display: flex;
+  flex-direction: column;
+ }
+.form{
+  margin-top: 4.055rem;
+  width: 20.4375rem;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.form-control label{
+  display: inline-block;
+  color: var(--very-dark-violet);
+  font-size: 0.75rem;;
+  line-height: .9375rem;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5625rem;
+  white-space: nowrap;
+  margin-top: 1.625rem;
+
+  
+}
+
+.form-control input{
+  height: 2.81rem;
+  border: .0625rem solid #DFDEE0;
+  border-radius: .5rem;
+  font-size: 1.125rem;
+  line-height: 1.437rem;
+  
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-color: var(--dark-grayish-violet);
+  transition: .5s;
+}
+
+input:focus { 
+  outline: none !important;
+  border-color: linear-gradient(to bottom, var(--background-color-1), var(--background-color-2));
+  
+}
+
+.m-y-cvc{
+  display: flex;
+  align-items: center;
+
+}
+.m-y-cvc input {
+  width: 5rem;
+}
+
+#c-cvc{
+  width: 9rem;
+}
+
+button{
+  cursor:pointer;
+}
+
+.btn{
+  width: 100%;
+  height: 3.31rem;
+  background-color: var(--very-dark-violet);
+  color: var(--white);
+  font-size: 1.125rem;
+  border: none;
+  border-radius: .5rem;
+  transition: .5s;
+  margin-top: 1.625rem;
+}
+.btn:hover{
+  background-color: var(--background-color-2);
+}
+
+small{
+  margin-top: .5rem;
+  color: var(--red-form);
+  display: none;
+}
+
+.circle {
+  background: linear-gradient(to bottom, var(--background-color-1), var(--background-color-2));
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+  margin-bottom: 2.1875rem;
+}
+
+.thankyou{
+font-size: 1.75rem;
+line-height: 2.25rem;
+text-align: center;
+letter-spacing: 0.225rem;
+margin-bottom: 1rem;
+}
+
+.added{
+font-size: 1.125rem;
+line-height: 1.43rem;
+text-align: center;
+color: var(--dark-grayish-violet);
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.hidde{
+  display: none;
+}
