@@ -45,19 +45,24 @@
           <div class="">
             <div class="form-control flex">
               <label for="c-name">CARDHOLDER NAME</label>
-              <input type="text" placeholder="e.g Jane Appleseed" id="c-name" />
-              <small>Error message</small>
+              <input
+                type="text"
+                onfocusout="verifica()"
+                placeholder="e.g Jane Appleseed"
+                id="c-name"
+              />
+              <small class="hidde" id="error-name">Can't be blank!</small>
             </div>
 
             <div class="form-control flex">
               <label for="c-number">CARD NUMBER</label>
               <input
+                onfocusout="verifica()"
                 type="text"
-                maxlength="16"
                 placeholder="e.g 1234 5678 9123 0000"
                 id="c-number"
               />
-              <small>Error message</small>
+              <small class="hidde" id="error-n">Can't be blank!</small>
             </div>
 
             <div class="m-y-cvc">
@@ -65,13 +70,13 @@
                 <label for="c-month">EXP. DATE (MM/YY)</label>
                 <input type="number" placeholder="MM" id="c-month" />
                 <input type="number" placeholder="YY" id="c-year" />
-                <small>Error message</small>
+                <small class="hidde">Error message</small>
               </div>
 
               <div class="form-control">
                 <label for="c-cvc">CVC</label>
                 <input type="number" placeholder="e.g 123" id="c-cvc" />
-                <small>Error message</small>
+                <small class="hidde">Error message</small>
               </div>
             </div>
           </div>

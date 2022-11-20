@@ -132,7 +132,7 @@ html * {
 }
 
 input:focus { 
-  outline: none !important;
+  outline: none;
   border-color: linear-gradient(to bottom, var(--background-color-1), var(--background-color-2));
   
 }
@@ -172,7 +172,7 @@ button{
 small{
   margin-top: .5rem;
   color: var(--red-form);
-  display: none;
+  
 }
 
 .circle {
@@ -207,4 +207,8 @@ input::-webkit-inner-spin-button {
 
 .hidde{
   display: none;
+}
+
+.error{
+  border-color: red !important;
 }
